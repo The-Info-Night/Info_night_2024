@@ -1,4 +1,3 @@
-import React from 'react';
 import { BodyPart } from './BodyPart';
 
 export function HumanBody() {
@@ -6,39 +5,57 @@ export function HumanBody() {
     {
       name: 'brain',
       path: '/brain',
-      position: 'top-[10%] left-1/2 -translate-x-1/2',
+      position: 'top-[5%] left-1/2 -translate-x-1/2',
       label: 'Cerveau',
     },
     {
-      name: 'lungs',
-      path: '/lungs',
-      position: 'top-[30%] left-1/2 -translate-x-1/2',
-      label: 'Poumons',
+      name: 'skeleton',
+      path: '/skeleton',
+      position: 'top-[40%] left-[25%]',
+      label: 'Squelette',
     },
     {
-      name: 'leftArm',
-      path: '/arms',
-      position: 'top-[35%] left-[20%]',
-      label: 'Bras Gauche',
+      name: 'blood',
+      path: '/blood',
+      position: 'top-[25%] left-[20%]',
+      label: 'Système sanguin',
     },
     {
-      name: 'rightArm',
-      path: '/arms',
-      position: 'top-[35%] right-[20%]',
-      label: 'Bras Droit',
+      name: 'skin',
+      path: '/skin',
+      position: 'top-[15%] right-[20%]',
+      label: 'Peau',
     },
     {
-      name: 'leftLeg',
-      path: '/legs',
-      position: 'top-[70%] left-[35%]',
-      label: 'Jambe Gauche',
+      name: 'digestive',
+      path: '/digestive',
+      position: 'top-[45%] right-[25%]',
+      label: 'Système digestif',
     },
     {
-      name: 'rightLeg',
-      path: '/legs',
-      position: 'top-[70%] right-[35%]',
-      label: 'Jambe Droite',
+      name: 'immune',
+      path: '/immune',
+      position: 'top-[30%] right-[30%]',
+      label: 'Système immunitaire',
     },
+    {
+      name: 'kidneys',
+      path: '/kidneys',
+      position: 'top-[60%] left-[30%]',
+      label: 'Reins',
+    },
+    {
+      name: 'lymphatic',
+      path: '/lymphatic',
+      position: 'top-[65%] right-[30%]',
+      label: 'Système lymphatique',
+    },
+    {
+      name: 'liver',
+      path: '/liver',
+      position: 'top-[50%] left-[40%]',
+      label: 'Foie',
+    }
   ];
 
   return (

@@ -1,18 +1,37 @@
-import React from 'react';
 import {BodyPartPage} from './BodyPartPage';
 
 export function Brain() {
-  return <BodyPartPage title="Le Cerveau" />;
+  return <BodyPartPage partId="brain" />;
 }
 
-export function Lungs() {
-  return <BodyPartPage title="Les Poumons" />;
+export function Skeleton() {
+  return <BodyPartPage partId="skeleton" />;
 }
 
-export function Arms() {
-  return <BodyPartPage title="Les Bras" />;
+export function Blood() {
+  return <BodyPartPage partId="blood" />;
 }
 
-export function Legs() {
-  return <BodyPartPage title="Les Jambes" />;
+export function Skin() {
+  return <BodyPartPage partId="skin" />;
+}
+
+export function Digestive() {
+  return <BodyPartPage partId="digestive" />;
+}
+
+export function Immune() {
+  return <BodyPartPage partId="immune" />;
+}
+
+export function Kidneys() {
+  return <BodyPartPage partId="kidneys" />;
+}
+
+export function Lymphatic() {
+  return <BodyPartPage partId="lymphatic" />;
+}
+
+export function Liver() {
+  return <BodyPartPage partId="liver" />;
 }

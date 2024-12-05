@@ -1,12 +1,3 @@
-import React from 'react';
-import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { BodyPartSection } from '../components/BodyPartSection';
-
-interface BodyPartContentProps {
-  partId: keyof typeof bodyPartData;
-}
-
 export interface BodyPartSection {
   functions: string;
   pathologies: string;
@@ -22,7 +13,7 @@ export interface BodyPartsData {
   [key: string]: BodyPartInfo;
 }
 
-const bodyPartData: BodyPartsData = {
+export const bodyPartData: BodyPartsData = {
   brain: {
     title: "Le Cerveau",
     sections: {
@@ -96,36 +87,3 @@ const bodyPartData: BodyPartsData = {
     }
   }
 };
-
-export function BodyPartPage({ partId }: BodyPartContentProps) {
-  const data = bodyPartData[partId];
-
-  return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-4xl font-bold text-gray-900 mb-8">{data.title}</h1>
-      
-      <BodyPartSection 
-        title="Fonctions principales"
-        content={data.sections.functions}
-      />
-      
-      <BodyPartSection 
-        title="Pathologies associées"
-        content={data.sections.pathologies}
-      />
-      
-      <BodyPartSection 
-        title="Conseils de santé"
-        content={data.sections.health}
-      />
-
-      <Link
-        to="/"
-        className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
-      >
-        <ArrowLeft className="w-5 h-5 mr-2" />
-        Retour à l'accueil
-      </Link>
-    </div>
-  );
-}
