@@ -1,4 +1,4 @@
-import { HumanBody } from "../components/Layout/HumanBody";
+import { HumanBody } from "../components/HumanBody";
 
 export function Home() {
   return (
