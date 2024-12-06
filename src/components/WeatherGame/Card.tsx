@@ -12,7 +12,7 @@ export function Card({ icon, isFlipped, isMatched, onClick, isDarkMode }: CardPr
   return (
     <div 
       onClick={onClick}
-      className="w-24 h-24 relative cursor-pointer"
+      className="w-24 h-24 relative cursor-pointer preserve-3d"
     >
       <div 
         className={`
@@ -26,7 +26,7 @@ export function Card({ icon, isFlipped, isMatched, onClick, isDarkMode }: CardPr
           ${isFlipped || isMatched ? 'rotate-y-180' : ''}
         `}
       >
-        {/* Front of card */}
+        {/* Front of card (hidden side) */}
         <div 
           className={`
             absolute 
@@ -40,13 +40,13 @@ export function Card({ icon, isFlipped, isMatched, onClick, isDarkMode }: CardPr
             justify-center
             transition-colors
             duration-200
-            ${isDarkMode ? 'bg-gray-700' : 'bg-gray-200'}
+            ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-200 hover:bg-gray-300'}
           `}
         >
           <div className={`w-12 h-12 rounded-full transition-colors duration-200 ${isDarkMode ? 'bg-gray-600' : 'bg-gray-300'}`} />
         </div>
 
-        {/* Back of card */}
+        {/* Back of card (icon side) */}
         <div 
           className={`
             absolute 
@@ -54,6 +54,7 @@ export function Card({ icon, isFlipped, isMatched, onClick, isDarkMode }: CardPr
             h-full 
             backface-hidden 
             bg-blue-500 
+            hover:bg-blue-600
             text-white 
             rounded-lg 
             shadow-md
@@ -62,6 +63,8 @@ export function Card({ icon, isFlipped, isMatched, onClick, isDarkMode }: CardPr
             items-center 
             justify-center 
             text-3xl
+            transition-colors
+            duration-200
           `}
         >
           {icon}
