@@ -1,6 +1,1 @@
-export interface WeatherData {
-  temperature: number;
-  humidity: number;
-  windSpeed: number;
-  description: string;
-}
+export interface WeatherData{temperature:number,humidity:number,windSpeed:number,description:string}
