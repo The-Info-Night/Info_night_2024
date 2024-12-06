@@ -60,7 +60,7 @@ export function HumanBody() {
 
   return (
     <div className="relative w-full max-w-md mx-auto h-[600px]">
-      <div className="absolute inset-0 bg-[url('https://media.discordapp.net/attachments/1308429892664299560/1314355074528706620/Design_sans_titre.png?ex=6753780d&is=6752268d&hm=766cfa88e1cb69fec1aa8bfcf48d8632c0da5f468786d80e59fa84c5fd148d49&=&format=webp&quality=lossless&width=468&height=468')] bg-cover bg-center bg-no-repeat opacity-80 transform scale-x-125" />
+      <div className="absolute inset-0 bg-[url('https://cdn.discordapp.com/attachments/1308429892664299560/1314381382696304640/Design_sans_titre-removebg-preview.png?ex=6753908d&is=67523f0d&hm=1e5e3d348928b204eb2fbc60816ba48b5d4cb83436a2c104fcd588da5ed1dc41&')] bg-cover bg-center bg-no-repeat opacity-80 transform scale-x-125" />
       {bodyParts.map((part) => (
         <BodyPart key={part.name} {...part} />
       ))}
