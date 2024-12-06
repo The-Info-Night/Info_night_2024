@@ -6,6 +6,7 @@ import { Home } from './pages/Home';
 import { Brain, Skeleton, Blood, Skin, Digestive, Immune, Kidneys, Lymphatic, Liver } from './pages/BodyParts';
 import { WeatherCaptcha } from './pages/WeatherCaptcha';
 import { Weather } from './pages/Weather';
+import { ChaosHome } from './pages/ChaosHome';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/kidneys" element={<Kidneys />} />
             <Route path="/lymphatic" element={<Lymphatic />} />
             <Route path="/liver" element={<Liver />} />
+            <Route path="/choas" element={<ChaosHome />} />
           </Routes>
         </Layout>
       </BrowserRouter>
